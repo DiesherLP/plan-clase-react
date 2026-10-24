@@ -17,8 +17,10 @@ function ActividadItem({ titulo, tiempo, tipo }) {
             <p>Duración: {tiempo}</p>
             <p>Estado: {completada ? 'Completada' : 'Pendiente'}</p>
 
-            <button onClick={() => setCompletada(!completada)}>
-                {completada ? 'Marcar como pendiente' : 'Marcar como completada'}
+            <button
+    className="boton-actividad"
+    onClick={() => setCompletada(!completada)}
+>                {completada ? 'Marcar como pendiente' : 'Marcar como completada'}
             </button>
         </div>
     );

@@ -109,3 +109,22 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+.boton-actividad {
+    background-color: #0f4c81;
+    color: white;
+    padding: 12px 18px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.boton-actividad:hover {
+    background-color: #083456;
+}
+
+.boton-actividad:focus-visible {
+    outline: 3px solid #0f4c81;
+    outline-offset: 3px;
+}
