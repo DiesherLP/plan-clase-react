@@ -1,6 +1,6 @@
 import HeaderClase from './components/HeaderClase';
 import ObjetivosCard from './components/ObjetivosCard';
-import ActividadItem from './components/ActividadItem';
+import ListaActividades from './components/ListaActividades';
 
 function App() {
     return (
@@ -21,21 +21,7 @@ function App() {
                 indicadorLogro="Identifica los componentes básicos y explica para qué sirven."
             />
 
-            <ActividadItem
-                titulo="Preguntas sobre las partes que conocemos"
-                tiempo="5 minutos"
-                tipo="Inicio"
-            />
-            <ActividadItem
-                titulo="Identificación de componentes y sus funciones"
-                tiempo="25 minutos"
-                tipo="Desarrollo"
-            />
-            <ActividadItem
-                titulo="Repaso de las partes de la computadora"
-                tiempo="10 minutos"
-                tipo="Cierre"
-            />
+            <ListaActividades />
         </div>
     );
 }
