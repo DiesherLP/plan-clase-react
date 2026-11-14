@@ -1,0 +1,72 @@
+.foro-clase { margin: 48px 0; color: #123642; border-top: 4px solid #247b78; }
+.foro-portada { display: flex; align-items: center; justify-content: space-between; gap: 30px; padding: clamp(24px, 4vw, 44px); background: #123642; color: #e3eeed; }
+.foro-portada > div { flex: 1; }
+.foro-clase .foro-etiqueta { font-size: .9rem; font-weight: 700; letter-spacing: 1.2px; text-transform: uppercase; margin: 0 0 14px; }
+.foro-portada .foro-etiqueta { color: #9cdbd5; }
+.foro-portada h2 { font-size: clamp(2rem, 4vw, 3.2rem); color: #fff; margin: 0 0 18px; line-height: 1.1; }
+.foro-portada p:last-child { margin: 0; font-size: 1.05rem; }
+.foro-ilustracion { width: 180px; flex-shrink: 0; }
+.foro-consigna { display: flex; gap: 22px; padding: 28px 0; border-bottom: 1px solid #cdd8d5; }
+.foro-consigna > span { font-family: 'Outfit', sans-serif; font-size: 4rem; line-height: 1; color: #247b78; }
+.foro-consigna h3 { font-size: 1.35rem; margin: 0 0 12px; }
+.foro-consigna p { margin: 0 0 10px; font-size: 1rem; }
+.foro-distribucion { display: flex; align-items: flex-start; gap: clamp(24px, 4vw, 48px); padding-top: 30px; }
+.foro-escritura { flex: 0 1 370px; min-width: 0; }
+.foro-conversacion { flex: 1 1 440px; min-width: 0; }
+.foro-escritura > h3, .foro-lista-cabecera h3 { font-size: 1.6rem; margin: 0 0 12px; }
+.foro-clase .foro-ayuda { font-size: .95rem; color: #425c63; margin: 8px 0 18px; }
+.foro-clase fieldset { padding: 0; margin: 0; border: 0; min-width: 0; }
+.foro-clase label { display: block; margin: 18px 0 8px; font-weight: 600; font-size: 1rem; }
+.foro-clase input, .foro-clase textarea { display: block; width: 100%; min-width: 0; padding: 12px 14px; border: 1px solid #78958f; border-bottom: 3px solid #247b78; border-radius: 0; background: #fffef9; color: #123642; font-size: 1rem; line-height: 1.5; }
+.foro-clase input { min-height: 48px; }
+.foro-clase textarea { resize: vertical; min-height: 150px; }
+.foro-clase input::placeholder, .foro-clase textarea::placeholder { color: #627676; opacity: 1; }
+.foro-clase .foro-contador { font-size: .9rem; color: #425c63; text-align: right; margin: 8px 0 16px; }
+.foro-clase button { border-radius: 0; min-height: 44px; font-size: .95rem; }
+.foro-publicar { width: 100%; padding: 14px 18px; background: #123642; border: 2px solid #123642; color: white; font-weight: 600; display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.foro-publicar:hover:not(:disabled) { background: #247b78; }
+.foro-clase fieldset:disabled .foro-publicar { opacity: .65; cursor: wait; }
+.foro-confirmacion { color: #286844; font-weight: 600; margin: 16px 0; }
+.foro-confirmacion:empty { display: none; }
+.foro-error { background: #fff0d0; color: #653d0d; border-left: 4px solid #bc7c19; padding: 14px; font-size: .95rem; overflow-wrap: anywhere; }
+.foro-orientacion { border-top: 1px solid #cdd8d5; margin-top: 24px; padding-top: 18px; }
+.foro-orientacion summary { cursor: pointer; font-weight: 600; min-height: 44px; padding: 10px 0; }
+.foro-orientacion p, .foro-orientacion li { font-size: .95rem; }
+.foro-lista-cabecera { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; align-items: center; padding-bottom: 18px; border-bottom: 2px solid #123642; }
+.foro-lista-cabecera .foro-etiqueta { font-size: .8rem; color: #247b78; }
+.foro-lista-cabecera h3 { margin: 0; }
+.foro-lista-cabecera button, .foro-destino button { padding: 8px 12px; background: transparent; color: #123642; border: 1px solid #78958f; }
+.foro-lista-cabecera button:hover:not(:disabled), .foro-destino button:hover { background: #e3eeed; }
+.foro-vacio { padding: 36px 20px; background: #e3eeed; margin-top: 22px; border-left: 4px solid #e8bd54; }
+.foro-vacio > span { font-family: 'Outfit', sans-serif; font-size: 3rem; font-weight: 700; color: #247b78; }
+.foro-vacio h4 { font-size: 1.4rem; margin: 18px 0 10px; }
+.foro-vacio p { margin: 0; }
+.foro-hilo { border-bottom: 1px solid #9bb5af; padding: 26px 0; }
+.foro-autor { display: flex; gap: 12px; align-items: center; }
+.foro-avatar { flex-shrink: 0; display: grid; place-items: center; width: 44px; height: 44px; background: #e8bd54; color: #123642; font-family: 'Outfit', sans-serif; font-weight: 700; }
+.foro-autor > div { min-width: 0; }
+.foro-autor h4 { margin: 0 0 5px; font-size: 1.1rem; overflow-wrap: anywhere; }
+.foro-autor p { margin: 0; font-size: .85rem; color: #425c63; overflow-wrap: anywhere; }
+.foro-mensaje { white-space: pre-wrap; overflow-wrap: anywhere; font-size: 1rem; margin: 18px 0 12px; }
+.foro-responder { padding: 8px 0; border: 0; background: transparent; color: #164b60; font-weight: 600; text-decoration: underline; text-underline-offset: 4px; }
+.foro-respuestas { margin: 18px 0 0 20px; padding-left: 18px; border-left: 3px solid #247b78; }
+.foro-hilo-etiqueta { color: #425c63; font-size: .9rem; font-weight: 600; }
+.foro-respuesta { padding: 14px 0; }
+.foro-respuesta + .foro-respuesta { border-top: 1px solid #cdd8d5; }
+.foro-respuesta .foro-avatar { background: #e3eeed; }
+.foro-destino { margin: 18px 0; padding: 16px; border-left: 4px solid #e8bd54; background: #e3eeed; }
+.foro-destino p { margin: 0 0 8px; }
+.foro-destino blockquote { margin: 0 0 12px; font-size: .95rem; max-height: 120px; overflow: auto; overflow-wrap: anywhere; }
+#formulario-foro { scroll-margin-top: 24px; }
+.foro-solo-lectores { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+@media (max-width: 760px) {
+  .foro-distribucion { flex-direction: column; }
+  .foro-escritura, .foro-conversacion { flex: auto; width: 100%; }
+  .foro-ilustracion { width: 100px; }
+}
+@media (max-width: 440px) {
+  .foro-portada { gap: 14px; padding: 24px 18px; }
+  .foro-ilustracion { display: none; }
+  .foro-consigna { gap: 14px; }
+  .foro-respuestas { margin-left: 4px; padding-left: 12px; }
+}

@@ -1,0 +1,179 @@
+.practica {
+  padding: 42px 0;
+  border-bottom: 1px solid var(--borde);
+}
+
+.practica-introduccion {
+  max-width: 680px;
+  color: var(--texto-secundario);
+}
+
+.practica-avance {
+  margin: 26px 0 36px;
+}
+
+.practica-avance label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 0.85rem;
+}
+
+.practica-avance progress {
+  display: block;
+  width: 100%;
+  height: 10px;
+  accent-color: var(--turquesa);
+}
+
+.practica-enunciado {
+  display: flex;
+  align-items: flex-start;
+  gap: 28px;
+  margin-bottom: 28px;
+}
+
+.practica-numero {
+  flex-shrink: 0;
+  font-family: 'Outfit', sans-serif;
+  font-size: clamp(3.5rem, 8vw, 6rem);
+  font-weight: 800;
+  line-height: 1;
+  color: var(--turquesa);
+}
+
+.practica-enunciado h3 {
+  margin: 8px 0 14px;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+.practica-enunciado > div {
+  max-width: 650px;
+  min-width: 0;
+}
+
+.practica-enunciado p:last-child {
+  margin-bottom: 0;
+}
+
+.practica-opciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.practica-opcion {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex: 1 1 calc(50% - 14px);
+  min-width: 0;
+  min-height: 76px;
+  padding: 16px;
+  border: 1px solid var(--borde);
+  border-bottom: 3px solid var(--azul);
+  border-radius: 0;
+  background: transparent;
+  color: var(--azul-oscuro);
+  text-align: left;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.practica-opcion:hover:not([aria-disabled='true']) {
+  background: var(--celeste);
+}
+
+.practica-letra {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  background: var(--azul);
+  color: white;
+  font-family: 'Outfit', sans-serif;
+}
+
+.practica-opcion.correcta {
+  background: #e1efe5;
+  border-color: var(--verde);
+}
+
+.practica-opcion.correcta .practica-letra {
+  background: var(--verde);
+}
+
+.practica-opcion.incorrecta {
+  background: #fff0d5;
+  border-color: #946511;
+}
+
+.practica-opcion.incorrecta .practica-letra {
+  background: #805711;
+}
+
+.practica-opcion[aria-disabled='true'] {
+  cursor: default;
+}
+
+.practica-respuesta {
+  margin-top: 24px;
+  padding: 18px 22px;
+  border-left: 4px solid;
+}
+
+.practica-respuesta h4 {
+  margin-bottom: 8px;
+  font-size: 1.15rem;
+}
+
+.practica-respuesta p {
+  margin-bottom: 0;
+}
+
+.es-acierto {
+  background: #e1efe5;
+  border-color: var(--verde);
+}
+
+.es-pista {
+  background: #fff0d5;
+  border-color: #946511;
+}
+
+.practica-controles {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 26px;
+}
+
+.practica-final {
+  padding: 30px 24px;
+  border-left: 5px solid var(--turquesa);
+  background: var(--celeste);
+}
+
+.practica-final h3 {
+  max-width: 620px;
+  margin: 12px 0 18px;
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+}
+
+.practica-final p {
+  max-width: 650px;
+}
+
+@media (max-width: 560px) {
+  .practica-enunciado {
+    gap: 16px;
+  }
+
+  .practica-opcion {
+    flex-basis: 100%;
+  }
+
+  .practica-controles .boton-actividad {
+    width: 100%;
+  }
+}

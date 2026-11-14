@@ -1,0 +1,58 @@
+.avance-clase {
+  margin: 28px 0 8px;
+  padding: clamp(18px, 3vw, 28px);
+  background: #e3eeed;
+  border-top: 4px solid #247b78;
+  border-bottom: 1px solid #a7c3bd;
+  color: #123642;
+}
+.avance-clase-cabecera {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.avance-clase h2 { margin: 0 0 8px; font-size: clamp(1.4rem, 3vw, 1.8rem); }
+.avance-clase-cabecera p { margin: 0; font-size: 1rem; }
+.avance-clase-porcentaje { font-family: 'Outfit', sans-serif; font-size: 2.6rem; white-space: nowrap; }
+.avance-clase-porcentaje span { font-size: 1.2rem; margin-left: 3px; }
+.avance-clase-medidor { height: 8px; margin: 22px 0; background: #c5d8d3; overflow: hidden; }
+.avance-clase-medidor > div { height: 100%; background: #247b78; }
+.avance-clase-etapas { display: flex; flex-wrap: wrap; gap: 12px; }
+.avance-clase-etapas button {
+  display: flex;
+  flex: 1 1 190px;
+  align-items: center;
+  gap: 12px;
+  min-height: 54px;
+  padding: 12px;
+  background: #f7f5ee;
+  color: #123642;
+  border: 1px solid #8aa9a3;
+  border-radius: 0;
+  font-size: 1rem;
+  text-align: left;
+}
+.avance-clase-etapas strong { margin-left: auto; }
+.avance-clase-indice { font-family: 'Outfit', sans-serif; font-weight: 700; color: #247b78; }
+.avance-clase-etapas button.etapa-completa { border-bottom: 4px solid #286844; }
+.avance-clase-etapas button:hover { background: #f4e7bd; }
+.avance-clase-pie { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; margin-top: 18px; }
+.avance-clase-pie button { min-height: 44px; border-radius: 0; font-size: 1rem; }
+.avance-clase-continuar { padding: 10px 16px; border: 2px solid #123642; background: #123642; color: white; font-weight: 600; }
+.avance-clase-continuar:hover { background: #247b78; }
+.avance-clase-continuar span { margin-left: 12px; }
+.avance-clase-reiniciar { padding: 10px 0; border: 0; background: transparent; color: #123642; text-decoration: underline; text-underline-offset: 4px; }
+.avance-clase-completo { margin: 0; font-weight: 600; color: #286844; }
+.avance-clase-nota { margin: 14px 0 0; font-size: .95rem; color: #425c63; }
+.avance-clase-confirmacion { margin-top: 18px; padding: 18px; background: #f7f5ee; border-left: 4px solid #e8bd54; }
+.avance-clase-confirmacion p { margin: 0 0 14px; }
+.avance-clase-confirmacion > div { display: flex; flex-wrap: wrap; gap: 12px; }
+.avance-clase-confirmacion button { min-height: 44px; padding: 10px 14px; border: 2px solid #123642; border-radius: 0; background: transparent; color: #123642; }
+.avance-clase-confirmacion .avance-clase-confirmar { background: #e8bd54; }
+#seccion-externa, #seccion-interna, #seccion-practica { scroll-margin-top: 24px; }
+@media (max-width: 480px) {
+  .avance-clase-etapas button { flex-basis: 100%; }
+  .avance-clase-cabecera { align-items: flex-start; gap: 12px; }
+  .avance-clase-porcentaje { font-size: 2rem; }
+}
