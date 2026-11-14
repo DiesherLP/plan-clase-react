@@ -18,12 +18,13 @@ function HeaderClase({ tituloTema, nombreDocente, horario }) {
   }
 
   function comenzarClase() {
-    const destino = document.getElementById('titulo-explorador');
+    const destino = document.getElementById('titulo-metas');
 
     if (destino) {
       destino.setAttribute('tabindex', '-1');
       destino.focus({ preventScroll: true });
-      destino.scrollIntoView({
+      const seccion = destino.closest('section') || destino;
+      seccion.scrollIntoView({
         behavior: reducirMovimiento ? 'auto' : 'smooth',
         block: 'start',
       });
