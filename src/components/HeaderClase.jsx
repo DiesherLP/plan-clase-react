@@ -18,12 +18,12 @@ function HeaderClase({ tituloTema, nombreDocente, horario }) {
   }
 
   function comenzarClase() {
-    const destino = document.getElementById('titulo-metas');
+    const destino = document.getElementById('titulo-avance-clase');
 
     if (destino) {
       destino.setAttribute('tabindex', '-1');
       destino.focus({ preventScroll: true });
-      const seccion = destino.closest('section') || destino;
+      const seccion = destino.closest('aside') || destino;
       seccion.scrollIntoView({
         behavior: reducirMovimiento ? 'auto' : 'smooth',
         block: 'start',
